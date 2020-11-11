@@ -6,17 +6,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Patua One', sans-serif;
+}
+
 body {
     background: #020021;
     font-family: 'Patua One';
 }
-    
+
 li {
     list-style: none;
 }
-a {
+
+a{
     text-decoration: none;
 }
+
 .grid-container {
     display: grid;
     width: 100%;
@@ -27,7 +33,9 @@ a {
     "header header"
     "main main"
     "footer footer";
+    
 }
+   
 
 header {
     padding: 0;
@@ -38,30 +46,34 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 10rem;
+    
 }
+
 .logo {
     display: block;
 }
+
+
 .main-nav {
     display: flex;
     align-items: center;
 }
+
 .main-nav li {
     display: block;
-    padding: 2rem;
     padding: 0 1.5rem;
-} 
+    font-weight: 200;
+}
+
 .main-nav li a {
     color: white;
-    font-weight: bold;
-}
-.main-nav li a:hover {
-    color: #00F582;
+    font-weight: 200;
 }
 .main-nav .signup {
     color: #00F582;
-    font-weight: bold;
+    font-weight: 200;
 }
+
 li:nth-of-type(4) {
     border-right: 2px solid white;
 }
@@ -73,47 +85,50 @@ main {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
 }
-
-.presentacion-texto{
-    align-content: flex-start;
-    display: grid;
-    justify-content: center;
-}
 main h1{
     align-self: end;
     font-size: 50px;
     color:#ffffff;
+    font-weight: 100;
 }
-
 main p{
     align-self: start;
     font-size: 13px;
     color: #534C6C;
-    
 }
 .btn { 
-
     display: grid;
-    justify-content: center;
     margin-top: 30px;
     width: 160px;
     height: 43px;
     font-size: 14px;
     background: #00F582;
     border-radius: 40px;
-    color: #ffffff;
-    border-color:#00F582 ; 
-
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+.btn:hover{
+    box-shadow: 1px 1px 10px #00F582;
+    font-size: 15px;
 }
 
 .presentacion-texto {
     background-color: #000020;
-    padding: 2rem 10rem;
+    padding-left: 10rem;
+    padding-top: 4rem;
 }
-
+.presentacion-imagen{
+    display: flex;
+    padding-top: 20px;
+}
     
 .presentacion-imagen img{
-    width: 60%;
+    width: 45%;
+    object-fit: contain;
+
+    
 }
 
 footer {
@@ -149,4 +164,5 @@ button{
     margin-top: 5px;
     margin-left: 80px;
     border: none;
+    outline: none;
 }
