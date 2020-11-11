@@ -61,17 +61,18 @@ header {
 
 .main-nav li {
     display: block;
-    padding: 2rem;
+    padding: 0 1.5rem;
+    font-weight: 200;
 }
 
 .main-nav li a {
     color: white;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 .main-nav .signup {
     color: #00F582;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 li:nth-of-type(4) {
@@ -81,22 +82,55 @@ li:nth-of-type(4) {
 
 main {
     grid-area: main;
-    background: rgb(44, 44, 155);
+  
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+main h1{
+    align-self: end;
+    font-size: 50px;
+    color:#ffffff;
+    font-weight: 100;
+}
+main p{
+    align-self: start;
+    font-size: 13px;
+    color: #534C6C;
+}
+.btn { 
+    display: grid;
+    margin-top: 30px;
+    width: 160px;
+    height: 43px;
+    font-size: 14px;
+    background: #00F582;
+    border-radius: 40px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    font-weight: 600;
 }
 
 .presentacion-texto {
-    background: rgb(28, 28, 119);
+    background-color: #000020;
+    padding-left: 10rem;
+    padding-top: 4rem;
 }
+.presentacion-imagen{
+    display: flex;
+    padding-top: 20px;
+}
+    
+.presentacion-imagen img{
+    width: 45%;
+    object-fit: contain;
 
-.presentacion-imagen {
-    background: rgb(21, 21, 70);
+    
 }
 
 footer {
     grid-area: footer;
-    background: rgb(16, 16, 44);
+   bottom: 0%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -127,4 +161,5 @@ button{
     margin-top: 5px;
     margin-left: 80px;
     border: none;
+    outline: none;
 }
