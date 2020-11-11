@@ -12,7 +12,8 @@ html {
 
 body {
     background: #020021;
-    font-family: 'Patua One';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 li {
@@ -68,17 +69,16 @@ header {
 
 .main-nav li a {
     color: white;
-    font-weight: 200;
+    font-weight: bold;
     transition: color ease 0.7s;
 }
 
 .main-nav li a:hover {
     color: #00F582;
 }
-
 .main-nav .signup {
     color: #00F582;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 li:nth-of-type(4) {
@@ -87,8 +87,7 @@ li:nth-of-type(4) {
 
 
 main {
-    grid-area: main;
-  
+    grid-area: main; 
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
 }
@@ -96,7 +95,8 @@ main h1{
     align-self: end;
     font-size: 50px;
     color:#ffffff;
-    font-weight: 100;
+    font-weight: bold;
+    
 }
 
 main h1:hover {
@@ -122,6 +122,11 @@ main p{
     outline: none;
     border: none;
     font-weight: 600;
+    transition: all ease 0.5s;
+}
+.btn:hover{
+    box-shadow: 1px 1px 10px #00F582;
+    font-size: 15px;
 }
 
 .presentacion-texto {
@@ -131,19 +136,33 @@ main p{
 }
 .presentacion-imagen{
     display: flex;
+    justify-content: center;
     padding-top: 20px;
 }
     
 .presentacion-imagen img{
+    z-index: 1;
     width: 45%;
     object-fit: contain;
+    filter: drop-shadow(10px 10px 15px black);
+
 
     
 }
+.difuminado{
 
+    background-color:  #370B6E;
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    border-radius: 150%;
+    filter: blur(2.5rem);
+    
+
+}
 footer {
     grid-area: footer;
-   bottom: 0%;
+    bottom: 0%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -159,7 +178,8 @@ footer {
 .titulo h3{
     color: white;
     font-size: 20px;
-    font-weight: 20;
+    font-weight: bold;
+    
 }
 .titulo p{
     color: gray;
@@ -169,7 +189,7 @@ footer {
 button {
     padding: 11px 15px;
     border-radius: 30px;
-    font-family: 'Patua One';
+    font-weight: bold;
     background: white;
     color: #10102C;
     margin-top: 5px;
@@ -183,5 +203,4 @@ button:hover {
     color: white;
     background: #00F582;
     font-size: 15px;
-
 }
