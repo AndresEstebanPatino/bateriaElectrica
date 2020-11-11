@@ -65,9 +65,9 @@ li:nth-of-type(4) {
 
 main {
     grid-area: main;
-    background: rgb(44, 44, 155);
+  
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
 }
 
 .presentacion-texto{
@@ -104,15 +104,17 @@ main p{
 
 .presentacion-texto {
     background-color: #000020;
+    padding: 2rem 10rem;
 }
 
-.presentacion-imagen {
-    background: rgb(21, 21, 70);
+    
+.presentacion-imagen img{
+    width: 60%;
 }
 
 footer {
     grid-area: footer;
-    background: rgb(16, 16, 44);
+   bottom: 0%;
     display: flex;
     justify-content: center;
     align-content: center;
