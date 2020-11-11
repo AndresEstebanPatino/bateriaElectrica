@@ -49,10 +49,14 @@ header {
 .main-nav li {
     display: block;
     padding: 2rem;
-}
+    padding: 0 1.5rem;
+} 
 .main-nav li a {
     color: white;
     font-weight: bold;
+}
+.main-nav li a:hover {
+    color: #00F582;
 }
 .main-nav .signup {
     color: #00F582;
