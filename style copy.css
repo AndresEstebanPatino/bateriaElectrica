@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #020021;
+    font-family: 'Patua One';
+}
+    
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+header {
+    margin: 0;
+    grid-area: header;
+    background-color: #020021;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    /*nuevo*/
+    padding-right: 4rem;
+    /*nuevo*/
+}
+
+nav {
+}
+
+.logo {
+    display: block;
+}
+
+.main-nav {
+    display: flex;
+    padding: 0;
+ 
+
+}
+
+.main-nav li {
+    display: block;
+    /*nuevo*/
+    padding: 0 1.5rem;
+    /*nuevo*/
+ 
+    
+}
+.main-nav li a {
+    color: white;
+    font-weight: bold;
+}
+.main-nav .signup {
+    color: #00F582;
+    font-weight: bold;
+}
+li:nth-of-type(4) {
+    border-right: 2px solid white;
+}
+
+main {
+    grid-area: main;
+    background: rgb(44, 44, 155);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.presentacion-texto{
+    align-content: flex-start;
+    display: grid;
+    /*nuevo*/
+    padding: 2rem 10rem;
+    /*nuevo*/
+
+}
+main h1{
+    align-self: end;
+    font-size: 50px;
+    color:#ffffff;
+}
+
+main p{
+    align-self: start;
+    font-size: 13px;
+    color: #534C6C;
+    
+}
+.btn { 
+
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    width: 160px;
+    height: 43px;
+    font-size: 14px;
+    background: #00F582;
+    border-radius: 40px;
+    color: #ffffff;
+    border-color:#00F582 ; 
+
+}
+
+.presentacion-texto {
+    background-color: #000020;
+}
+
+.presentacion-imagen {
+    background: rgb(21, 21, 70);
+    /*nuevo*/
+    padding: 2rem 10rem;
+    /*nuevo*/
+}
+
+footer {
+    grid-area: footer;
+    background: rgb(16, 16, 44);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.footer-div{
+    justify-items: center;
+    align-items: center;
+    display: block;
+    line-height: 25px;
+    margin: 20px;
+}
+.titulo h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 20;
+}
+.titulo p{
+    color: gray;
+    font-size: 11px;
+}
+button{
+    padding: 11px 15px;
+    border-radius: 30px;
+    font-family: 'Patua One';
+    background: white;
+    color: #10102C;
+    margin-top: 5px;
+    margin-left: 80px;
+    border: none;
+}
