@@ -105,9 +105,13 @@ main p{
 .presentacion-texto {
     background-color: #000020;
     padding: 2rem 10rem;
+    padding-right: 1rem;
 }
 
-    
+.presentacion-imagen {
+    justify-items: center;
+}
+
 .presentacion-imagen img{
     width: 60%;
 }
