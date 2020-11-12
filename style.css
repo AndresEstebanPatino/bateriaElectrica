@@ -218,15 +218,15 @@ button:hover {
         overflow: hidden;
     }
     header{
-        display: grid;
+        display: flex;
         padding: 0;
     }
     
     nav{
         order:-1;
+        display: none;
     }
     .grid-container{
-        display: grid;
         height: 100%;
     }
     main{
@@ -234,18 +234,46 @@ button:hover {
         display: flex;
         justify-content: center;
     }
+    main h1{
+        font-size: 40px;
+    }
+    main p{
+        font-size: 12px;
+    }
+    .difuminado{
+        display: none;
+    }
     .presentacion-texto{
         padding: 0;
         display: grid;
-        height: 50%;
-        justify-items: center;
+        margin-top: 20px;
     }
     .presentacion-imagen{
         padding: 0;
         order: -1;
         display: flex;
     }
+    .logo{
+        display: flex;
+    position: relative;
+    width: 100%;
+    margin-top:45px;
+    }
+    .logo img{
+        width: 55%;
+    object-fit: scale-down;
+    justify-content: center;
+    display: flex;
+    margin:auto;
+    }
     footer{
-
+        display: none;
+    }
+    .btn{
+        
+    }
+    .presentacion-imagen img{
+        width: 90%;
+        margin-top: 30px;
     }
 }
