@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 *,
 *::before,
 *::after {
@@ -12,8 +13,7 @@ html {
 
 body {
     background: #020021;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: 'Roboto Condensed', sans-serif;    
 }
 
 li {
@@ -36,7 +36,6 @@ a{
     "footer footer";
     
 }
-   
 
 header {
     padding: 0;
@@ -69,7 +68,7 @@ header {
 
 .main-nav li a {
     color: white;
-    font-weight: bold;
+    font-weight: 300;
     transition: color ease 0.7s;
 }
 
@@ -204,3 +203,53 @@ button:hover {
     background: #00F582;
     font-size: 15px;
 }
+
+.boton1{
+
+z-index: 2;
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 100%;
+background: yellow;
+right:510px;
+top: 210px;
+} 
+.boton2{
+
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: yellow;
+    right:403px;
+    top: 210px;
+    }
+    
+
+    .boton3{
+
+        z-index: 2;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: yellow;
+        right:564px;
+        top: 325px;
+    }
+
+    .boton4{
+
+        z-index: 2;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: yellow;
+        right:345px;
+        top: 325px;
+        }
+
+        
