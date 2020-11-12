@@ -213,3 +213,39 @@ button:hover {
     box-shadow: 1px 1px 10px #ffff;
     cursor: pointer;
 }
+@media (max-width:450px ) {
+    body{
+        overflow: hidden;
+    }
+    header{
+        display: grid;
+        padding: 0;
+    }
+    
+    nav{
+        order:-1;
+    }
+    .grid-container{
+        display: grid;
+        height: 100%;
+    }
+    main{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .presentacion-texto{
+        padding: 0;
+        display: grid;
+        height: 50%;
+        justify-items: center;
+    }
+    .presentacion-imagen{
+        padding: 0;
+        order: -1;
+        display: flex;
+    }
+    footer{
+
+    }
+}
