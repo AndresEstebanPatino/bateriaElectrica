@@ -70,11 +70,12 @@ header {
 .main-nav li a {
     color: white;
     font-weight: bold;
-    transition: color ease 0.7s;
+    transition: all ease 0.7s;
 }
 
 .main-nav li a:hover {
     color: #00F582;
+    filter: drop-shadow(2px 2px 5px  #00F582)
 }
 .main-nav .signup {
     color: #00F582;
@@ -99,12 +100,6 @@ main h1{
     
 }
 
-main h1:hover {
-    color: #00F582;
-}
-
-
-
 main p{
     align-self: start;
     font-size: 13px;
@@ -123,10 +118,27 @@ main p{
     border: none;
     font-weight: 600;
     transition: all ease 0.5s;
+    
 }
 .btn:hover{
     box-shadow: 1px 1px 10px #00F582;
-    font-size: 15px;
+    cursor: pointer;
+    animation: heart 1.3s ease infinite;
+}
+
+@keyframes heart {
+    0% {
+       
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        
+    }
 }
 
 .presentacion-texto {
@@ -146,8 +158,6 @@ main p{
     object-fit: contain;
     filter: drop-shadow(10px 10px 15px black);
 
-
-    
 }
 .difuminado{
 
@@ -196,11 +206,10 @@ button {
     margin-left: 80px;
     border: none;
     outline: none;
-    transition: all ease 0.7s;
+    transition: all ease 0.5s;
 }
 
 button:hover {
-    color: white;
-    background: #00F582;
-    font-size: 15px;
+    box-shadow: 1px 1px 10px #ffff;
+    cursor: pointer;
 }
