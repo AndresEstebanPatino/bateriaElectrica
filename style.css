@@ -34,26 +34,25 @@ a{
     "header header"
     "main main"
     "footer footer";
-    
+    padding: 1rem 2rem;
 }
    
 
 header {
-    padding: 0;
-    margin: 0;
     grid-area: header;
     background-color: #020021;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 10rem;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
 }
 
 .logo {
-    display: block;
+    padding: 1rem;
 }
 
+nav {
+    align-self: center;  
+}
 
 .main-nav {
     display: flex;
@@ -61,15 +60,14 @@ header {
 }
 
 .main-nav li {
-    display: block;
-    padding: 0 1.5rem;
     font-weight: 200;
-
 }
 
 .main-nav li a {
+    white-space: nowrap;
     color: white;
     font-weight: bold;
+    padding: 0 1.5rem;
     transition: all ease 0.7s;
 }
 
@@ -77,6 +75,7 @@ header {
     color: #00F582;
     filter: drop-shadow(2px 2px 5px  #00F582)
 }
+
 .main-nav .signup {
     color: #00F582;
     font-weight: bold;
@@ -91,20 +90,21 @@ main {
     grid-area: main; 
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
+    margin: auto;
+    padding-top: 3rem;
 }
+
 main h1{
-    align-self: end;
     font-size: 50px;
     color:#ffffff;
     font-weight: bold;
-    
 }
 
 main p{
-    align-self: start;
     font-size: 13px;
     color: #534C6C;
 }
+
 .btn { 
     display: grid;
     margin-top: 30px;
@@ -120,6 +120,7 @@ main p{
     transition: all ease 0.5s;
     
 }
+
 .btn:hover{
     box-shadow: 1px 1px 10px #00F582;
     cursor: pointer;
@@ -143,41 +144,38 @@ main p{
 
 .presentacion-texto {
     background-color: #000020;
-    padding-left: 10rem;
-    padding-top: 4rem;
 }
+
 .presentacion-imagen{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
 }
     
 .presentacion-imagen img{
     z-index: 1;
-    width: 45%;
+    max-width: 70%;
+    height: auto;
     object-fit: contain;
     filter: drop-shadow(10px 10px 15px black);
-
 }
-.difuminado{
 
+.difuminado{
     background-color:  #370B6E;
     position: absolute;
     width: 220px;
     height: 320px;
     border-radius: 150%;
-    filter: blur(2.5rem);
-    
-
+    filter: blur(2.5rem); 
 }
+
 footer {
     grid-area: footer;
     bottom: 0%;
     display: flex;
     justify-content: center;
-    align-content: center;
-    
+    align-content: center; 
 }
+
 .footer-div{
     justify-items: center;
     align-items: center;
@@ -185,12 +183,13 @@ footer {
     line-height: 25px;
     margin: 20px;
 }
+
 .titulo h3{
     color: white;
     font-size: 20px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
+
 .titulo p{
     color: gray;
     font-size: 11px;
@@ -213,39 +212,76 @@ button:hover {
     box-shadow: 1px 1px 10px #ffff;
     cursor: pointer;
 }
-@media (max-width:450px ) {
-    body{
-        overflow: hidden;
-    }
-    header{
-        display: grid;
-        padding: 0;
-    }
+
+/*media queries*/
+
+@media screen and (max-width: 1063px) {
     
-    nav{
-        order:-1;
-    }
-    .grid-container{
-        display: grid;
-        height: 100%;
-    }
-    main{
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
-    .presentacion-texto{
-        padding: 0;
-        display: grid;
-        height: 50%;
-        justify-items: center;
-    }
-    .presentacion-imagen{
-        padding: 0;
-        order: -1;
-        display: flex;
-    }
-    footer{
+    header {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
     }
+
+    .logo {
+        justify-self: center;
+    }
+
+    nav {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+
+    .presentacion-imagen {
+        order: -1;
+    }
+
+    .presentacion-imagen img{
+        max-width: 60%;
+    }
+
+    .presentacion-texto {
+        display: grid;
+        justify-self: center;
+        font-size: 3rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .btn {
+        justify-self: center;
+    }
+
+    .presentacion-texto h1{
+        font-size: 2.5rem;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            ". ."
+        }
+    }
+
+@media screen and (max-width: 715px) {
+    
+    .presentacion-texto h1, p{
+        display: none;
+    }
+    .presentacion-imagen img{
+        max-width: 80%;
+    }
+    
 }
