@@ -5,25 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: 'Patua One', sans-serif;
 }
-
 body {
     background: #020021;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
-
 li {
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
-
 .grid-container {
     display: grid;
     width: 100%;
@@ -36,8 +30,6 @@ a{
     "footer footer";
     padding: 1rem 2rem;
 }
-   
-
 header {
     grid-area: header;
     background-color: #020021;
@@ -45,24 +37,19 @@ header {
     grid-template-columns: 1fr 1fr;
     margin: auto;
 }
-
 .logo {
     padding: 1rem;
 }
-
 nav {
     align-self: center;  
 }
-
 .main-nav {
     display: flex;
     align-items: center;
 }
-
 .main-nav li {
     font-weight: 200;
 }
-
 .main-nav li a {
     white-space: nowrap;
     color: white;
@@ -70,22 +57,17 @@ nav {
     padding: 0 1.5rem;
     transition: all ease 0.7s;
 }
-
 .main-nav li a:hover {
     color: #00F582;
     filter: drop-shadow(2px 2px 5px  #00F582)
 }
-
 .main-nav .signup {
     color: #00F582;
     font-weight: bold;
 }
-
 li:nth-of-type(4) {
     border-right: 2px solid white;
 }
-
-
 main {
     grid-area: main; 
     display: grid;
@@ -93,18 +75,15 @@ main {
     margin: auto;
     padding-top: 3rem;
 }
-
 main h1{
     font-size: 50px;
     color:#ffffff;
     font-weight: bold;
 }
-
 main p{
     font-size: 13px;
     color: #534C6C;
 }
-
 .btn { 
     display: grid;
     margin-top: 30px;
@@ -118,39 +97,40 @@ main p{
     border: none;
     font-weight: 600;
     transition: all ease 0.5s;
-    
 }
-
 .btn:hover{
     box-shadow: 1px 1px 10px #00F582;
     cursor: pointer;
     animation: heart 1.3s ease infinite;
 }
-
 @keyframes heart {
     0% {
-       
     }
-
     50% {
         transform: scale(1.1);
-
     }
-
     100% {
-        
     }
 }
-
 .presentacion-texto {
     background-color: #000020;
 }
-
 .presentacion-imagen{
     display: flex;
     justify-content: center;
 }
-    
+
+.boton1{
+    position: absolute;
+    z-index: 1;
+    width: 121px;
+    height: 124px;
+    right: 31%;
+    top: 34%;
+    border-radius: 100%;
+    background-color:grey;
+} 
+
 .presentacion-imagen img{
     z-index: 1;
     max-width: 70%;
@@ -169,7 +149,6 @@ main p{
     border-radius: 150%;
     filter: blur(2.5rem); 
 }
-
 footer {
     grid-area: footer;
     bottom: 0%;
@@ -177,7 +156,6 @@ footer {
     justify-content: center;
     align-content: center; 
 }
-
 .footer-div{
     justify-items: center;
     align-items: center;
@@ -185,18 +163,15 @@ footer {
     line-height: 25px;
     margin: 20px;
 }
-
 .titulo h3{
     color: white;
     font-size: 20px;
     font-weight: bold; 
 }
-
 .titulo p{
     color: gray;
     font-size: 11px;
 }
-
 button {
     padding: 11px 15px;
     border-radius: 30px;
@@ -209,7 +184,6 @@ button {
     outline: none;
     transition: all ease 0.5s;
 }
-
 button:hover {
     box-shadow: 1px 1px 10px #ffff;
     cursor: pointer;
@@ -220,6 +194,18 @@ button:hover {
 
 @media screen and (max-width: 1063px) {
     
+    .boton1{
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        right: 25%;
+        top: 39%;
+        border-radius: 100%;
+        background-color: gray;
+    } 
+
+
     header {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
@@ -242,6 +228,7 @@ button:hover {
 
     .presentacion-imagen {
         order: -1;
+       
     }
 
     .presentacion-imagen img{
@@ -288,3 +275,4 @@ button:hover {
     }
     
 }
+
