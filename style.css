@@ -159,6 +159,8 @@ main p{
     filter: drop-shadow(10px 10px 15px black);
 }
 
+
+
 .difuminado{
     background-color:  #370B6E;
     position: absolute;
@@ -212,6 +214,7 @@ button:hover {
     box-shadow: 1px 1px 10px #ffff;
     cursor: pointer;
 }
+
 
 /*media queries*/
 
